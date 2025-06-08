@@ -1,0 +1,123 @@
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: rgb(244, 244, 241);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif !important
+    }
+
+    /* Login Container */
+    .content {
+        background-color: white;
+        width: 320px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgb(194, 187, 187);
+        text-align: center;
+    }
+
+    /* Header */
+    .header {
+        background: #455763;
+        padding: 15px;
+        border-radius: 20px 20px 0 0;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Syne", serif;
+    }
+
+    /* Form Inputs */
+    .data {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .data label {
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .data input {
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+    }
+
+    /* Remember Me & Forgot Password */
+    .remember {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .remember label {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .remember input[type="checkbox"] {
+        transform: scale(0.8);
+        cursor: pointer;
+    }
+
+    .remember a {
+        text-decoration: none;
+        color: #4158d0;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        height: 40px;
+        width: 100%;
+        background: linear-gradient(-135deg, #455763, #d6c9b4);
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: linear-gradient(-135deg, #455763, #d6c9b4);
+    }
+
+    /* Signup Link */
+    .signup {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .signup a {
+        text-decoration: none;
+        color: #4158d0;
+        font-weight: bold;
+    }
+
+    /* Error Message */
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+    }

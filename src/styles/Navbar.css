@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #d3dadc;
+  padding: 0.25rem 1rem;
+  height: auto;
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  font-family: "Syne", sans-serif;
+}
+
+/* Brand/logo section */
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #455763;
+}
+
+/* Navigation links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #455763;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 0px;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevents button text from breaking */
+}
+
+.navbar a:hover {
+  color: #2c3e50;
+}
+
+/* Body offset to prevent hiding behind navbar */
+body {
+  padding-top: 60px;
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .navbar a {
+    padding: 0.5rem 1rem;
+  }
+}

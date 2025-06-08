@@ -1,0 +1,233 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+}
+
+  
+.customizer-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* prevent any unintended overflow */
+}
+
+.customizer-form {
+  width: 40vw;
+  max-width: 40vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #e8e2da;
+  padding: 1.8rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+   
+  
+.preview-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background: white;
+  border-left: 1px solid #ddd;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  max-width: auto;
+  height: 400px;
+  object-fit: contain;
+}
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #455763;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .overlay-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+  }
+  .top-bar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #d3dadc;
+    color: #455763;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .logo h2{
+    color: #455763;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #455763;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #2c3e50;
+  }
+  .custom-dropdown {
+    position: relative;
+  }
+  
+  .custom-dropdown {
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dropdown-header {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #e8e2da;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown-header:hover {
+    background-color: #d6c9b4;
+  }
+  
+  .arrow {
+    font-size: 0.9em;
+    margin-left: 8px;
+    color: #555;
+  }
+  
+  .dropdown-list {
+    list-style: none;
+    padding: 0%;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: relative;
+  }
+  
+  .dropdown-option {
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
+  }
+  
+  .dropdown-option:hover {
+    background-color: #e8f0fe;
+    padding-left: 18px;
+  }
+  
+  .dropdown-option.selected {
+    background-color: #dbe9ff;
+    font-weight: 600;
+  }
+
+  .category-radio-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .radio-label input[type="radio"] {
+    accent-color:  #455763;
+  }
+  
+  .radio-label:hover {
+    transform: scale(1.05);
+    border-color:  #455763;
+    transition: transform 0.2s ease;
+  }
+  
+  button{
+    background-color: #d6c9b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button p {
+    color: #455763;
+    font-size: medium;
+    padding: 10px 20px;
+    margin: 0; 
+  }
+
+  button:hover p{
+    color: black;
+  }
+
+  .list-disc{
+    list-style: none;
+    padding: 0;
+  }
+.overlay-content{
+    text-align: center;
+}

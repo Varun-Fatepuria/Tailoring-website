@@ -1,0 +1,52 @@
+.measurements-page {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+  }
+  
+  .measurements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .measurements-table th,
+  .measurements-table td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .measurements-table th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+  }
+  
+  .measure-field {
+    text-align: left;
+  }
+  
+  .measure-value {
+    text-align: center;
+  }
+  
+  .update-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-btn:hover {
+    background-color: #005fa3;
+  }
+  
